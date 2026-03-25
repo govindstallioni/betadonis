@@ -35,7 +35,6 @@ function App() {
         <div className="mt-6"><SelectedForYou /></div>
         <div className="mt-6"><Disciplines /></div>
         <div className="mt-6"><Tournaments /></div>
-        <div className="mt-6 pb-2"><RandomGames /></div>
       </main>
       <BottomNav />
     </div>
