@@ -166,7 +166,7 @@ export default function BottomNav() {
             : 'opacity-0 pointer-events-none'
         }`}
       >
-        <div className="absolute inset-0 bg-[#0a1628]/95 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-white backdrop-blur-sm" />
         <div
           className={`relative h-full flex flex-col transition-transform duration-300 ${
             menuOpen ? 'translate-y-0' : 'translate-y-8'
@@ -174,12 +174,12 @@ export default function BottomNav() {
         >
           {/* Menu header */}
           <div className="flex items-center justify-between px-5 pt-5 pb-3">
-            <h2 className="text-white text-[18px] font-bold tracking-wide">MENÜ</h2>
+            <h2 className="text-[#0a1628] text-[18px] font-bold tracking-wide">MENÜ</h2>
             <button
               onClick={() => setMenuOpen(false)}
-              className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10"
+              className="w-9 h-9 flex items-center justify-center rounded-full bg-black/10"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0a1628" strokeWidth="2.5" strokeLinecap="round">
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
@@ -192,7 +192,7 @@ export default function BottomNav() {
               {menuItems.map((item, i) => (
                 <button
                   key={item.title}
-                  className={`flex items-center gap-4 w-full p-3.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] active:scale-[0.98] transition-all duration-200`}
+                  className={`flex items-center gap-4 w-full p-3.5 rounded-xl bg-black/[0.04] hover:bg-black/[0.08] active:scale-[0.98] transition-all duration-200`}
                   style={{
                     transitionDelay: menuOpen ? `${i * 30}ms` : '0ms',
                     opacity: menuOpen ? 1 : 0,
@@ -206,10 +206,10 @@ export default function BottomNav() {
                     {item.icon}
                   </div>
                   <div className="text-left">
-                    <div className="text-white text-[13px] font-bold leading-tight">{item.title}</div>
-                    <div className="text-white/50 text-[11px] mt-0.5 leading-tight">{item.desc}</div>
+                    <div className="text-[#0a1628] text-[13px] font-bold leading-tight">{item.title}</div>
+                    <div className="text-[#0a1628]/50 text-[11px] mt-0.5 leading-tight">{item.desc}</div>
                   </div>
-                  <svg className="ml-auto shrink-0 opacity-30" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round">
+                  <svg className="ml-auto shrink-0 opacity-30" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0a1628" strokeWidth="2" strokeLinecap="round">
                     <polyline points="9 18 15 12 9 6" />
                   </svg>
                 </button>
@@ -231,8 +231,8 @@ export default function BottomNav() {
                 </svg>
               </div>
               <div className="text-left">
-                <div className="text-white text-[13px] font-bold leading-tight">Müşteri Hizmetleri</div>
-                <div className="text-white/50 text-[11px] mt-0.5 leading-tight">Bizimle iletişime geçin, size yardımcı olalım.</div>
+                <div className="text-[#0a1628] text-[13px] font-bold leading-tight">Müşteri Hizmetleri</div>
+                <div className="text-[#0a1628]/50 text-[11px] mt-0.5 leading-tight">Bizimle iletişime geçin, size yardımcı olalım.</div>
               </div>
             </div>
           </div>
